@@ -7,19 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B55C9611645A4E100C9058B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9601645A4E100C9058B /* Cocoa.framework */; };
-		2B55C96B1645A4E100C9058B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2B55C9691645A4E100C9058B /* InfoPlist.strings */; };
+		2B55C9781645A5D100C9058B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9651645A4E100C9058B /* Foundation.framework */; };
+		2B55C9791645A5E300C9058B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9631645A4E100C9058B /* AppKit.framework */; };
+		2B99C2381646CEDA0015E9D5 /* GDIBSensorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B55C9731645A4F100C9058B /* GDIBSensorHelper.m */; };
+		2BDA9195164A3C4E007848D3 /* OpenUtility.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA9194164A3C4E007848D3 /* OpenUtility.applescript */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2B55C95D1645A4E100C9058B /* GDIBSensor.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDIBSensor.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B55C9601645A4E100C9058B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2B250C171648DCB700C6CA49 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		2B415922164646BA00257622 /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
+		2B415923164646BA00257622 /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		2B55C95D1645A4E100C9058B /* GDIBSensor.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDIBSensor.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B55C9631645A4E100C9058B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		2B55C9641645A4E100C9058B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		2B55C9651645A4E100C9058B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2B55C9681645A4E100C9058B /* GDIBSensor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GDIBSensor-Info.plist"; sourceTree = "<group>"; };
 		2B55C96A1645A4E100C9058B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2B55C96C1645A4E100C9058B /* GDIBSensor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDIBSensor-Prefix.pch"; sourceTree = "<group>"; };
+		2B55C9721645A4F100C9058B /* GDIBSensorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDIBSensorHelper.h; sourceTree = "<group>"; };
+		2B55C9731645A4F100C9058B /* GDIBSensorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDIBSensorHelper.m; sourceTree = "<group>"; };
+		2BDA9194164A3C4E007848D3 /* OpenUtility.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = OpenUtility.applescript; sourceTree = "<group>"; };
+		2BDA9199164A3CB9007848D3 /* OpenUtility.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenUtility.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,7 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B55C9611645A4E100C9058B /* Cocoa.framework in Frameworks */,
+				2B55C9791645A5E300C9058B /* AppKit.framework in Frameworks */,
+				2B55C9781645A5D100C9058B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +45,12 @@
 		2B55C9521645A4E100C9058B = {
 			isa = PBXGroup;
 			children = (
+				2BDA9193164A3BEC007848D3 /* Scripts */,
+				2B55C9721645A4F100C9058B /* GDIBSensorHelper.h */,
+				2B55C9731645A4F100C9058B /* GDIBSensorHelper.m */,
+				2B250C171648DCB700C6CA49 /* Storyboard.storyboard */,
+				2B415922164646BA00257622 /* JRSwizzle.h */,
+				2B415923164646BA00257622 /* JRSwizzle.m */,
 				2B55C9661645A4E100C9058B /* GDIBSensor */,
 				2B55C95F1645A4E100C9058B /* Frameworks */,
 				2B55C95E1645A4E100C9058B /* Products */,
@@ -46,7 +60,7 @@
 		2B55C95E1645A4E100C9058B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2B55C95D1645A4E100C9058B /* GDIBSensor.bundle */,
+				2B55C95D1645A4E100C9058B /* GDIBSensor.xcplugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,20 +68,10 @@
 		2B55C95F1645A4E100C9058B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B55C9601645A4E100C9058B /* Cocoa.framework */,
-				2B55C9621645A4E100C9058B /* Other Frameworks */,
+				2B55C9651645A4E100C9058B /* Foundation.framework */,
+				2B55C9631645A4E100C9058B /* AppKit.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2B55C9621645A4E100C9058B /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2B55C9631645A4E100C9058B /* AppKit.framework */,
-				2B55C9641645A4E100C9058B /* CoreData.framework */,
-				2B55C9651645A4E100C9058B /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		2B55C9661645A4E100C9058B /* GDIBSensor */ = {
@@ -88,6 +92,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		2BDA9193164A3BEC007848D3 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				2BDA9199164A3CB9007848D3 /* OpenUtility.scpt */,
+				2BDA9194164A3C4E007848D3 /* OpenUtility.applescript */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,7 +110,6 @@
 			buildPhases = (
 				2B55C9591645A4E100C9058B /* Sources */,
 				2B55C95A1645A4E100C9058B /* Frameworks */,
-				2B55C95B1645A4E100C9058B /* Resources */,
 			);
 			buildRules = (
 			);
@@ -105,7 +117,7 @@
 			);
 			name = GDIBSensor;
 			productName = GDIBSensor;
-			productReference = 2B55C95D1645A4E100C9058B /* GDIBSensor.bundle */;
+			productReference = 2B55C95D1645A4E100C9058B /* GDIBSensor.xcplugin */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -134,22 +146,13 @@
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		2B55C95B1645A4E100C9058B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2B55C96B1645A4E100C9058B /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		2B55C9591645A4E100C9058B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B99C2381646CEDA0015E9D5 /* GDIBSensorHelper.m in Sources */,
+				2BDA9195164A3C4E007848D3 /* OpenUtility.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,16 +174,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "compiler-default";
+				CLANG_CXX_LIBRARY = "compiler-default";
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_CC = unsupported;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_MODEL_TUNING = G5;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -191,60 +197,36 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "/Users/guru_i/Library/Application Support/Developer/Shared/Xcode/Plug-ins/";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 			};
 			name = Debug;
 		};
-		2B55C96E1645A4E100C9058B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.8;
-				SDKROOT = macosx;
-			};
-			name = Release;
-		};
 		2B55C9701645A4E100C9058B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
 				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GDIBSensor/GDIBSensor-Prefix.pch";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = "";
+				DEPLOYMENT_LOCATION = YES;
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DSTROOT = "$(HOME)";
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				INFOPLIST_FILE = "GDIBSensor/GDIBSensor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				LD_RUNPATH_SEARCH_PATHS = /Developer;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
+				WRAPPER_EXTENSION = xcplugin;
 			};
 			name = Debug;
-		};
-		2B55C9711645A4E100C9058B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GDIBSensor/GDIBSensor-Prefix.pch";
-				INFOPLIST_FILE = "GDIBSensor/GDIBSensor-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
@@ -253,18 +235,17 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B55C96D1645A4E100C9058B /* Debug */,
-				2B55C96E1645A4E100C9058B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2B55C96F1645A4E100C9058B /* Build configuration list for PBXNativeTarget "GDIBSensor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B55C9701645A4E100C9058B /* Debug */,
-				2B55C9711645A4E100C9058B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
