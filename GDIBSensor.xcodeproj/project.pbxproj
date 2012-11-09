@@ -17,7 +17,6 @@
 		2B250C171648DCB700C6CA49 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		2B415922164646BA00257622 /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		2B415923164646BA00257622 /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
-		2B490AEF164C94BE002FD346 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2B521E9D164B62580091B449 /* OpenUtility.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = OpenUtility.applescript; sourceTree = "<group>"; };
 		2B55C95D1645A4E100C9058B /* GDIBSensor.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDIBSensor.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B55C9631645A4E100C9058B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -68,7 +67,6 @@
 		2B55C95F1645A4E100C9058B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2B490AEF164C94BE002FD346 /* Cocoa.framework */,
 				2B55C9651645A4E100C9058B /* Foundation.framework */,
 				2B55C9631645A4E100C9058B /* AppKit.framework */,
 			);
