@@ -7,16 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B521E9E164B62580091B449 /* OpenUtility.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2B521E9D164B62580091B449 /* OpenUtility.applescript */; };
 		2B55C9781645A5D100C9058B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9651645A4E100C9058B /* Foundation.framework */; };
 		2B55C9791645A5E300C9058B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9631645A4E100C9058B /* AppKit.framework */; };
 		2B99C2381646CEDA0015E9D5 /* GDIBSensorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B55C9731645A4F100C9058B /* GDIBSensorHelper.m */; };
-		2BDA9195164A3C4E007848D3 /* OpenUtility.applescript in Sources */ = {isa = PBXBuildFile; fileRef = 2BDA9194164A3C4E007848D3 /* OpenUtility.applescript */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2B250C171648DCB700C6CA49 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		2B415922164646BA00257622 /* JRSwizzle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JRSwizzle.h; sourceTree = "<group>"; };
 		2B415923164646BA00257622 /* JRSwizzle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JRSwizzle.m; sourceTree = "<group>"; };
+		2B490AEF164C94BE002FD346 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2B521E9D164B62580091B449 /* OpenUtility.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = OpenUtility.applescript; sourceTree = "<group>"; };
 		2B55C95D1645A4E100C9058B /* GDIBSensor.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GDIBSensor.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B55C9631645A4E100C9058B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		2B55C9651645A4E100C9058B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -25,8 +27,6 @@
 		2B55C96C1645A4E100C9058B /* GDIBSensor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GDIBSensor-Prefix.pch"; sourceTree = "<group>"; };
 		2B55C9721645A4F100C9058B /* GDIBSensorHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GDIBSensorHelper.h; sourceTree = "<group>"; };
 		2B55C9731645A4F100C9058B /* GDIBSensorHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GDIBSensorHelper.m; sourceTree = "<group>"; };
-		2BDA9194164A3C4E007848D3 /* OpenUtility.applescript */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.applescript; path = OpenUtility.applescript; sourceTree = "<group>"; };
-		2BDA9199164A3CB9007848D3 /* OpenUtility.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = OpenUtility.scpt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +68,7 @@
 		2B55C95F1645A4E100C9058B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B490AEF164C94BE002FD346 /* Cocoa.framework */,
 				2B55C9651645A4E100C9058B /* Foundation.framework */,
 				2B55C9631645A4E100C9058B /* AppKit.framework */,
 			);
@@ -95,8 +96,7 @@
 		2BDA9193164A3BEC007848D3 /* Scripts */ = {
 			isa = PBXGroup;
 			children = (
-				2BDA9199164A3CB9007848D3 /* OpenUtility.scpt */,
-				2BDA9194164A3C4E007848D3 /* OpenUtility.applescript */,
+				2B521E9D164B62580091B449 /* OpenUtility.applescript */,
 			);
 			name = Scripts;
 			sourceTree = "<group>";
@@ -152,7 +152,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B99C2381646CEDA0015E9D5 /* GDIBSensorHelper.m in Sources */,
-				2BDA9195164A3C4E007848D3 /* OpenUtility.applescript in Sources */,
+				2B521E9E164B62580091B449 /* OpenUtility.applescript in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
