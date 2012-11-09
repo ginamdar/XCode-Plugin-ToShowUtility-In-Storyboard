@@ -11,6 +11,7 @@
 
 #define kSourceCodeEditorArea	@"GDISourceCodeEditorPane"
 #define kStoryboardArea         @"GDICanvasEditorPane"
+#define kShowUtilityVisible     @"GDIShowUtilityVisible"
 
 #define GDIBCanvasNotification  @"GDIBCanvasNotification"
 
@@ -38,8 +39,10 @@
 #pragma mark - SourceCodePane
 - (id)gdib_initWithNibName:(id)arg1 bundle:(id)arg2 document:(id)arg3
 {
-    if([[NSUserDefaults standardUserDefaults] boolForKey:kStoryboardArea]){
-        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:kStoryboardArea];
+    if([[NSUserDefaults standardUserDefaults] boolForKey:kShowUtilityVisible]){
+        [[NSUserDefaults standardUserDefaults]setBool:NO forKey:kShowUtilityVisible];
+        [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:
+                                                                GDIBCanvasNotification object:self]];
     }
     return [self gdib_initWithNibName:arg1 bundle:arg2 document:arg3];
 }
@@ -50,6 +53,7 @@
     id selectedCategory = [self gdib_selectedCategory];
     if([[NSUserDefaults standardUserDefaults] boolForKey:kStoryboardArea]){
         [[NSUserDefaults standardUserDefaults]setBool:NO forKey:kStoryboardArea];
+        [[NSUserDefaults standardUserDefaults]setBool:YES forKey:kShowUtilityVisible];
         [[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:
                                                                 GDIBCanvasNotification object:self]];
     }

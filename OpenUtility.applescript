@@ -1,14 +1,7 @@
 #!/usr/bin/osascript
 -- Guru Inamdar Copyright 2012.
 -- The script provided as-is, use at your own risk
-(*
-README 
 
-*)
-(*tell application "Xcode"
-    activate
-end tell
- *)
 tell application "Xcode"
 tell active workspace document
 tell application "Xcode"
