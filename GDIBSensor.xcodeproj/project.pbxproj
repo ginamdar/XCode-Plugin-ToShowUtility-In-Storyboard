@@ -11,6 +11,7 @@
 		2B55C9781645A5D100C9058B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9651645A4E100C9058B /* Foundation.framework */; };
 		2B55C9791645A5E300C9058B /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B55C9631645A4E100C9058B /* AppKit.framework */; };
 		2B99C2381646CEDA0015E9D5 /* GDIBSensorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B55C9731645A4F100C9058B /* GDIBSensorHelper.m */; };
+		2BAC50D8164DC23800B7D46D /* JRSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B415923164646BA00257622 /* JRSwizzle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -149,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BAC50D8164DC23800B7D46D /* JRSwizzle.m in Sources */,
 				2B99C2381646CEDA0015E9D5 /* GDIBSensorHelper.m in Sources */,
 				2B521E9E164B62580091B449 /* OpenUtility.applescript in Sources */,
 			);
