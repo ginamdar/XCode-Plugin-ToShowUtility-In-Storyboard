@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <AppKit/AppKit.h>
 
-@interface GDIBSensorHelper : NSObject
+@interface GDIBSensorHelper : NSObject{
+    NSMutableDictionary *activeProjects;
+}
 
 @end
